@@ -1,0 +1,65 @@
+body {
+  background-color: #1a1a1a;
+  margin: 0%;
+  padding: 0%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.card {
+  background-color: #9ba9b2;
+  border-radius: 10px;
+  padding: 30px;
+  width: 400px;
+}
+
+h2 {
+  color: red;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#inupt_text {
+  align-content: center;
+  text-align: left;
+  width: 100;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+  border-radius: 50px;
+  border-bottom: 5px;
+  padding: 10px;
+  border: none;
+}
+button {
+  margin-bottom: 15px;
+  border-radius: 50px;
+  border: #1a1a1a;
+  background-color: rgb(71, 71, 196);
+  padding: 5px;
+  width: 200px;
+  margin-left: 90px;
+}
+
+button:hover {
+  color: white;
+  background-color: rgb(41, 41, 193);
+}
+
+a {
+  color: red;
+  font-size: smaller;
+}
+a:hover {
+  color: rgb(41, 41, 193);
+}

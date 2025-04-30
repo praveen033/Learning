@@ -1,0 +1,75 @@
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #948f8f;
+}
+
+/* id selector */
+#header {
+  color: red;
+  font-size: 30px;
+}
+
+/* Type Selector */
+h1 {
+  color: rgb(89, 89, 237);
+}
+
+/*  Class Selector */
+.highlight {
+  background-color: rgb(230, 230, 163);
+}
+
+/* Attribute Selector */
+input[type="text"] {
+  border: 2px solid #21a2c9;
+}
+input[type="password"] {
+  border: 2px solid #22b038;
+}
+
+/* Child Selector */
+div > p {
+  background-color: #22b038;
+}
+
+/*Descendant Selector */
+article p {
+  font-style: italic;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 10px;
+}
+div section {
+  color: #af102b;
+}
+
+/*  Adjacent Sibling Selector */
+h1 + p {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/* 9. General Sibling Selector */
+h2 ~ p {
+  color: red;
+}
+
+/* Pseudo-class Selector */
+
+a:hover {
+  background-color: #14a50e;
+  text-decoration: none;
+  color: #1a1a1a;
+  padding: 5px;
+  margin: 4px;
+}
+
+/* 12. Grouping Selector */
+
+h1,
+h2,
+h3 {
+  color: orange;
+}
