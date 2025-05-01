@@ -3,20 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chai landing page</title>
-    <link rel="stylesheet" href="style.css" />
-
+    <title>Coming Soon</title>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
       body,
       html {
         margin: 0;
         padding: 0;
-        font-family: "Noto Sans", sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         height: 100%;
       }
-
       .container {
         background: linear-gradient(135deg, #8a2be2, #4169e1);
         display: flex;
@@ -33,10 +28,21 @@
         max-width: 400px;
       }
 
-      .logo {
-        width: 150px;
-        /* height: 100px; */
+      .form {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 20px;
+      }
+      img {
+        height: 120px;
         object-fit: contain;
+        align-items: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
       }
 
       h1 {
@@ -48,12 +54,6 @@
         color: #666;
         margin-bottom: 20px;
       }
-
-      form {
-        display: flex;
-        flex-direction: column;
-      }
-
       input[type="email"] {
         padding: 0.5rem;
         border-radius: 5px;
@@ -80,12 +80,18 @@
   <body>
     <div class="container">
       <div class="content">
-        <img src="../images/cup-logo.png" class="logo" alt="chai logo" />
-        <h1>Coming Soon</h1>
-        <p>We're working hard to bring something amazing. Stay tuned!</p>
-        <form id="notify-form">
-          <input type="email" placeholder="Enter your email" required />
-          <button type="submit">Notify Me</button>
+        <img src="img\royalenfield-himalayan.png" alt="Meter" />
+        <h2>Coming Soon!</h2>
+        <p>We're working hard on bring something amazing. Stay tunned!</p>
+        <form class="form">
+          <label for="user-email">Email</label>
+          <input
+            type="email"
+            id="user-email"
+            placeholder="Enter your Email"
+            required
+          />
+          <button type="submit" class="submit">Notify Me</button>
         </form>
       </div>
     </div>

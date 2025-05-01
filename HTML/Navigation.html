@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        background-color: #969697;
+      }
+      .nav1 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 20px;
+        padding: 20px;
+        background-color: #333;
+        border-radius: 50px;
+      }
+
+      .nav1:hover {
+        color: #469435;
+      }
+
+      .nav1 a {
+        color: #fff;
+        background-color: #333;
+        display: block;
+      }
+
+      .nav1 .about2 {
+        display: none;
+      }
+
+      .nav1 .about1:hover .about2 {
+        position: absolute;
+        font-size: 18px;
+        display: table-column;
+      }
+
+      .nav1 .submit {
+        padding: 08px;
+        border-radius: 25px;
+      }
+
+      .nav1 .submit:hover {
+        background-color: #469435;
+        font-weight: bold;
+        box-shadow: #469435;
+        transition-delay: 60ms;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav1">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <div class="about1">
+        <a href="#">About Us</a>
+        <div class="about2">
+          <a href="#">Team</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+      <button type="submit" class="submit">Logout</button>
+    </div>
+  </body>
+</html>
