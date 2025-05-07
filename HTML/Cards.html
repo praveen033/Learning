@@ -45,35 +45,50 @@
         </div>
       </div>
     </nav>
+    <div class="cards">
+      <div class="login_card">
+        <form action="" class="login_form">
+          <h2>Login</h2>
+          <label for="user_name" style="margin-top: 10px">User Name</label>
+          <input type="text" id="user_name" placeholder="User Name" required />
 
-    <div class="login_card">
-      <form action="" class="login_form">
-        <h2>Login</h2>
-        <label for="user_name" style="margin-top: 10px">User Name</label>
-        <input type="text" id="user_name" placeholder="User Name" required />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <button type="submit" id="btn-login">Login</button>
 
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Password" required />
-        <button type="submit" id="btn-login">Login</button>
-
-        <a href="#" id="forget">forget password</a>
-      </form>
-    </div>
-    <div class="signup_card">
-      <form action="" class="signup_form">
-        <h2>Sign Up</h2>
-        <label for="email">Email Id</label>
-        <input type="email" id="email" placeholder="Email Id" required />
-        <label for="user_name">User Name</label>
-        <input type="text" id="user_name" placeholder="User Name" required />
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Password" required />
-        <label for="contact">Contact No.</label>
-        <input type="number" id="contact" placeholder="Contact No." required />
-        <button type="submit" id="btn-login">Create Account</button>
-        <button type="reset" id="btn_reset">Reset</button>
-        <a href="#" id="forget">forget password</a>
-      </form>
+          <a href="#" id="forget">forget password</a>
+        </form>
+      </div>
+      <div class="signup_card">
+        <form action="" class="signup_form">
+          <h2>Sign Up</h2>
+          <label for="email">Email Id</label>
+          <input type="email" id="email" placeholder="Email Id" required />
+          <label for="user_name">User Name</label>
+          <input type="text" id="user_name" placeholder="User Name" required />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <label for="contact">Contact No.</label>
+          <input
+            type="number"
+            id="contact"
+            placeholder="Contact No."
+            required
+          />
+          <button type="submit" id="btn-login">Create Account</button>
+          <button type="reset" id="btn_reset">Reset</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
