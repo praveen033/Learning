@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Cards</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="MultiCards.css" />
+  </head>
+  <body class="p-2" style="background-color: #122405; --bs-bg-opacity: 50">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <h2 class="navbar-brand" style="color: rgb(231, 93, 93)">Hey Bro</h2>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.google.com/search?q=cars+in+cars+movie&oq=cars+in+cars+mov&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyCggBEC4Y1AIYgAQyCggCEC4Y1AIYgAQyCggDEC4Y1AIYgAQyCggEEC4Y1AIYgAQyBggFEEUYOTIHCAYQABiABDIICAcQABgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBCDQ2ODVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+                >Cars in movie</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contact Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Email Us</a></li>
+                <li><a class="dropdown-item" href="#">Contact Number</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="carouselExampleRide"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/HTML/img/0_gNmwcCm2Pe6oHkNc.jpg"
+            class="d-block w-100"
+            alt="Image not Loaded"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/HTML/img/new3.jpeg"
+            class="d-block w-100"
+            alt="Image not Loaded"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/HTML/img/new4.jpg"
+            class="d-block w-100"
+            alt="Image not Loaded"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleRide"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleRide"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div
+      class="container my-4"
+      style="border: 0px; border-radius: 10px; padding: 0%; border: 5px"
+    >
+      <div class="row g-1" style="background-color: #1b3806">
+        <div class="col-sm-6 col-md-3" style="background-color: #1b3806">
+          <div class="card d-flex flex-column h-100">
+            <img
+              src="/HTML/img/0_gNmwcCm2Pe6oHkNc.jpg"
+              style="width: 100%; height: 43%; object-fit: cover"
+              class="card-img-top"
+              sizes="w-10 h-10"
+              alt="Image not Loaded"
+            />
+            <div
+              class="card-body d-flex flex-column"
+              style="background-color: #ac0829"
+            >
+              <h3
+                class="card-title"
+                style="
+                  background-color: #ac0829;
+                  font-style: italic;
+                  text-underline-position: below;
+                "
+              >
+                Lightning McQueen
+              </h3>
+              <p
+                class="card-text"
+                style="background-color: #ac0829; color: antiquewhite"
+              >
+                He is a custom-built, one-of-a-kind Piston Cup race car known
+                for his speed, fiery red paint job, and signature catchphrase
+                "Ka-chow!".
+              </p>
+              <a
+                href="https://www.google.com/search?sca_esv=df6bb7b4e6fcd0a4&q=tell+me+something+speed+95+character+in+cars+movie&source=lnms&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZud1z6kQpMfoEdCJxnpm_3WBcADgXS0kQ7L92bqYkFCG8bHRvu8ol_TdrDmA5KIpYh6-6pKu-y8ykNchxvjRj-H1tb88imXsJlNo48coCCf0o_JVbFa1PaQuGXB6ErZwtkTc-8h2HyO2v_mFlptpCax8C_uDjiAazd5Eq9_KZg3hQxGJimsBFB7GOYIfdHpsJuJ5cyJUZNUKJjjH7h1qGGb-avoA&sa=X&ved=2ahUKEwjq5-uDtIeQAxUaV3ADHTVnKkAQ0pQJegQICRAB&biw=1525&bih=699&dpr=1.26"
+                class="btn btn-primary mt-auto align-self-start"
+                >Know More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3" style="background-color: #1b3806">
+          <div
+            class="card d-flex flex-column h-100"
+            style="background-color: #080808"
+          >
+            <img
+              src="/HTML/img/Mater.jpg"
+              class="card-img-top"
+              alt="Image not Loaded"
+            />
+            <div
+              class="card-body d-flex flex-column"
+              style="background-color: #353131"
+            >
+              <h3
+                class="card-title"
+                style="
+                  background-color: #353131;
+
+                  text-underline-position: below;
+                  color: antiquewhite;
+                "
+              >
+                Mater
+              </h3>
+              <p
+                class="card-text"
+                style="background-color: #353131; color: antiquewhite"
+              >
+                He is a rusty but lovable tow truck with a heart of gold, famous
+                for his goofy antics, southern charm, and unwavering loyalty to
+                his friends..
+              </p>
+              <a
+                href="https://www.google.com/search?q=tell+me+something+about+Mater&sca_esv=df6bb7b4e6fcd0a4&biw=1525&bih=699&ei=P3TfaKjXOZyRseMPpffeyQk&ved=0ahUKEwjo8tKcuoeQAxWcSGwGHaW7N5kQ4dUDCBA&uact=5&oq=tell+me+something+about+Mater&gs_lp=Egxnd3Mtd2l6LXNlcnAiHXRlbGwgbWUgc29tZXRoaW5nIGFib3V0IE1hdGVyMgYQABgeGA0yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyCBAAGIkFGKIEMggQABiABBiiBDIIEAAYgAQYogRIhltQnRBY-UlwAngAkAEAmAHNAaAB9g6qAQYwLjEyLjG4AQPIAQD4AQH4AQKYAg2gAssNwgIKEAAYRxjWBBiwA8ICBxAAGIAEGA3CAgYQABgWGB6YAwDiAwUSATEgQIgGAZAGCJIHBjIuMTAuMaAHh0yyBwYwLjEwLjG4B7sNwgcGMi0xMi4xyAdA&sclient=gws-wiz-serp"
+                class="btn btn-primary mt-auto align-self-start"
+                >Know More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3" style="background-color: #1b3806">
+          <div class="card d-flex flex-column h-100">
+            <img
+              src="/HTML/img/Sally Carrera.jpg"
+              class="card-img-top"
+              alt="Image not Loaded"
+            />
+            <div
+              class="card-body d-flex flex-column"
+              style="background-color: rgb(110, 172, 243)"
+            >
+              <h5
+                class="card-title"
+                style="background-color: rgb(110, 172, 243)"
+              >
+                Sally Carrera
+              </h5>
+              <p class="card-text" style="background-color: rgb(110, 172, 243)">
+                She is a sleek blue Porsche 911, Radiator Springs’ savvy motel
+                owner, admired for her elegance, intelligence, and love for her
+                hometown.
+              </p>
+              <a
+                href="https://www.google.com/search?q=tell+me+something+about+Sally+Carrera&sca_esv=df6bb7b4e6fcd0a4&udm=50&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeoJTKjrFjVxydQWqI2NcOha3O1YqG67F0QIhAOFN_ob1yXos5K_Qo9Tq-0cVPzex8YVosMX4HbDUrR7LivhWnk0FuAZVXvp62Oi2LViZ2OMmfytS7nNJKwjX-dfWDM13u79Ad-ozOsBhPchmVRVEnbtWFJzd1HixniG-pG3cQciEsrkJqA&aep=1&ntc=1&sa=X&ved=2ahUKEwjo8tKcuoeQAxWcSGwGHaW7N5kQ2J8OegQIBhAE&biw=1525&bih=699&dpr=1.26&mstk=AUtExfDnxd2UtkI7U8Qx4o6C3PswFJaNqlWfe0MMQbHtZvgTxQVUCeYUPiqBLvbDQppD82yNLrIzJ6sYgFyjqMb5keNMuhbHpeoklfObcj3QMcsLzAaD1c4h-SbLk-mpLkzvYvWOrE9SZdSPpxJeEme6-ikBtWBvml_wxUY&csuir=1"
+                class="btn btn-primary mt-auto align-self-start"
+                >Know More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3" style="background-color: #1b3806">
+          <div class="card d-flex flex-column h-100">
+            <img
+              src="/HTML/img/Doc Hudson.jpeg"
+              style="width: 100%; height: 44%; object-fit: cover"
+              class="card-img-top"
+              alt="Image not Loaded"
+            />
+            <div
+              class="card-body d-flex flex-column"
+              style="background-color: rgb(240, 154, 92)"
+            >
+              <h5
+                class="card-title"
+                style="background-color: rgb(240, 154, 92)"
+              >
+                Doc Hudson
+              </h5>
+              <p class="card-text" style="background-color: rgb(240, 154, 92)">
+                He is a legendary 1951 Hudson Hornet, once a racing champion
+                known as the Fabulous Hudson Hornet, now a wise mentor guiding
+                others with experience and tough love.
+              </p>
+              <a
+                href="https://www.google.com/search?q=tell+me+something+about+Doc+Hudson&sca_esv=df6bb7b4e6fcd0a4&biw=1525&bih=699&ei=h3TfaIvOEMDhseMPx5b04Ag&ved=0ahUKEwjLrdS-uoeQAxXAcGwGHUcLHYwQ4dUDCBA&uact=5&oq=tell+me+something+about+Doc+Hudson&gs_lp=Egxnd3Mtd2l6LXNlcnAiInRlbGwgbWUgc29tZXRoaW5nIGFib3V0IERvYyBIdWRzb24yBRAhGKABSIgiUMgXWMgXcAh4AZABAJgBtgGgAbYBqgEDMC4xuAEDyAEA-AEC-AEBmAIJoALMAcICChAAGEcY1gQYsAOYAwCIBgGQBgiSBwM4LjGgB64BsgcDMC4xuAe5AcIHAzEuOMgHDQ&sclient=gws-wiz-serp"
+                class="btn btn-primary mt-auto align-self-start"
+                >Know More</a
+              >
+            </div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
