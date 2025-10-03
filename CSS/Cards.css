@@ -93,28 +93,27 @@ a:hover {
   /* display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row; */ */
+  flex-direction: row; */
 }
-.login_card{
+.login_card {
   margin-top: 400px;
   margin-left: 200px;
   height: 100vh;
   width: 150vb;
 }
-.signup_card{
+.signup_card {
   height: 80vh;
   width: 150vb;
 }
 
-.login_form  {
-  
+.login_form {
   border: solid #1e1a56 1px;
   box-shadow: 12px 12px 12px 10px rgba(0, 0, 255, 0.2);
   box-sizing: content-box;
   width: 30%;
   height: 30vh;
 }
-.cards{
+.cards {
   display: flex;
   flex-direction: row;
   height: 100vh;
@@ -175,11 +174,11 @@ form > input {
 }
 
 .signup_form {
-   display: flex;
+  display: flex;
   flex-direction: column;
   border: solid #1e1a56 1px;
   box-shadow: 12px 12px 12px 10px rgba(0, 0, 255, 0.2);
   box-sizing: content-box;
   width: 30%;
-  height: 50vh; 
+  height: 50vh;
 }
