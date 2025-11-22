@@ -159,3 +159,28 @@ class Employee {
 let emp = new Employee("Alice", -50000);
 console.log(emp._salary);
 emp.salary = 60000;
+
+
+
+class BankAccount {
+  constructor(balance = 0) {
+      if (balance < 0) {
+      throw new Error (`balance can't negative`); 
+  }
+    this._balance = balance;
+  }
+  
+get balance (){
+    return amount;
+}
+set balance (amount){
+    return amount;
+}
+  deposit(amount){
+      this.balance += amount;
+  }
+  withdraw(amount)
+  {
+      this.balance -= amount;
+  }
+}
