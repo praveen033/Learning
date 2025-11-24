@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const infoDesc = document.getElementById("description");
   const errorMessage = document.getElementById("error-message");
 
-  const API_Key = "5f69c1963b41187ca0703fa80f8a3d92";
+  //const API_Key = "5f69c1963b41187ca0703fa80f8a3d92"; commented for the security factor
 
   getWeatherBtn.addEventListener("click", async () => {
     const city = cityName.value.trim();
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     divInfo.classList.remove("hidden");
     errorMessage.classList.add("hidden");
-  } 
+  }
 
   function displayErrors() {
     divInfo.classList.add("hidden");
