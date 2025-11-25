@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const totalCart = document.getElementById("cart-total");
   const totalPrice = document.getElementById("total-price");
   const checkOutBtn = document.getElementById("checkout-btn");
+  const removeBth = document.getElementsByClassName("removeButton");
 
   const products = [
     { id: 1, name: "Product 1", price: 100 },
@@ -15,11 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const cart = [];
 
-  products.forEach((product) => {
+  products.forEach((product1) => {
     let productDiv = document.createElement("div");
     productDiv.classList.add("product");
-    productDiv.innerHTML = `<span>${product.name} - ${product.price}</span>
-    <button data_id= "${product.id}"> Add to Cart</button>
+    productDiv.innerHTML = `<span>${product1.name} - ${product1.price}</span>
+    <button data_id= "${product1.id}"> Add to Cart</button>
     `;
     productList.appendChild(productDiv);
   });
@@ -27,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   productList.addEventListener("click", (e) => {
     if (e.target.tagName !== "BUTTON") return;
     else {
-      console.log("clicked");
+      // console.log("clicked");
       const product_id = parseInt(e.target.getAttribute("data_id"));
       const product = products.find((p) => p.id === product_id);
       addToCart(product);
@@ -48,15 +49,38 @@ document.addEventListener("DOMContentLoaded", () => {
       cart.forEach((item, index) => {
         total_Price += item.price;
         const cartItem = document.createElement("div");
-        cartItem.innerHTML = `<span>${item.name}-${item.price}</span>`;
+        cartItem.innerHTML = `<span>${item.name} - ${item.price}</span>
+        <button id= "${item.id}" class="removeButton">Remove</button>`;
+        cartItem.classList.add("product");
+        // console.log(cartItem.innerHTML);
         cartList.appendChild(cartItem);
         console.log(total_Price);
         totalPrice.textContent = `${total_Price}`;
       });
     } else {
       totalCart.classList.add("hidden");
+      // console.log(`@`);
     }
   }
+
+  cartList.addEventListener("click", (e) => {
+    console.log(e.target.tagName);
+    if (e.target.tagName === "BUTTON") {
+      let removeProductId = e.target.getAttribute("id");
+      let removeProduct = products.find((f) => f.id === removeProductId);
+      cart.pop(removeProduct);
+      runderCart();
+
+      if (cart.length < 1) {
+        let emptyMsg = document.createElement("div");
+        emptyMsg.innerHTML = `<span>Your cart is empty.</span>`;
+        cartList.appendChild(emptyMsg);
+      }
+    } else {
+      return;
+    }
+    // emptyCart.ATTRIBUTE_NODE.classList.remove("hidden");
+  });
 
   checkOutBtn.addEventListener("click", (e) => {
     alert("Checkout completed");
